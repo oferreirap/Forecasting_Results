@@ -134,35 +134,27 @@
 
 
 <script>
-    // Replace the following with the JavaScript code from your individual Plotly plot HTML files
     // Cabot plots
-    var cabot_plot1_data = {
-        // Your Cabot plot data
-    };
-
-    var cabot_plot1_layout = {
-        // Your Cabot plot layout
-    };
-
-    Plotly.newPlot('cabot_plot1', [cabot_plot1_data], cabot_plot1_layout);
-
-    // Add more JavaScript code for additional Cabot plots
+    document.getElementById('cabot_plot1').innerHTML = '<iframe src="Cabot/income_over_time_cabot.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot2').innerHTML = '<iframe src="Cabot/laborcost_heatmap_cabot_week41.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot3').innerHTML = '<iframe src="Cabot/laborcost_heatmap_cabot_week42.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot4').innerHTML = '<iframe src="Cabot/laborcost_heatmap_cabot_week43.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot5').innerHTML = '<iframe src="Cabot/laborcost_heatmap_cabot_week44.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot6').innerHTML = '<iframe src="Cabot/normalized_income_timeofday_cabot.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot7').innerHTML = '<iframe src="Cabot/simultaneous_employees_cabot.html" width="100%" height="600px"></iframe>';
+    document.getElementById('cabot_plot8').innerHTML = '<iframe src="Cabot/simultaneous_employees_heatmap_cabot.html" width="100%" height="600px"></iframe>';
 
     // Daveward plots
-    var daveward_plot1_data = {
-        // Your Daveward plot data
-    };
+    document.getElementById('daveward_plot1').innerHTML = '<iframe src="Daveward/income_over_time_daveward.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot2').innerHTML = '<iframe src="Daveward/laborcost_heatmap_daveward_week41.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot3').innerHTML = '<iframe src="Daveward/laborcost_heatmap_daveward_week42.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot4').innerHTML = '<iframe src="Daveward/laborcost_heatmap_daveward_week43.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot5').innerHTML = '<iframe src="Daveward/laborcost_heatmap_daveward_week44.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot6').innerHTML = '<iframe src="Daveward/normalized_income_timeofday_daveward.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot7').innerHTML = '<iframe src="Daveward/simultaneous_employees_daveward.html" width="100%" height="600px"></iframe>';
+    document.getElementById('daveward_plot8').innerHTML = '<iframe src="Daveward/simultaneous_employees_heatmap_daveward.html" width="100%" height="600px"></iframe>';
 
-    var daveward_plot1_layout = {
-        // Your Daveward plot layout
-    };
-
-    Plotly.newPlot('daveward_plot1', [daveward_plot1_data], daveward_plot1_layout);
-
-    // Add more JavaScript code for additional Daveward plots
-
-    // Repeat similar code for other locations (Greenbrier, Harkrider, Vilonia)
+    // Repeat similar lines for other locations (Greenbrier, Harkrider, Vilonia)
 </script>
-
 </body>
 </html>
