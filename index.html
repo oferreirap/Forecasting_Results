@@ -8,7 +8,39 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+<!-- Forecast -->
+<div>
+    <h2>Forecasts</h2>
+    
+    <!-- forecast 1 -->
+    <div id="forecast1">
+        <h3>Cabot forecast</h3>
+        <!-- Use an iframe to embed the HTML file content -->
+        <iframe src="forecast_plots/forecast_cabot.html" width="100%" height="720px"></iframe>
+    </div>
 
+    <!-- forecast 2 -->
+    <div id="forecast2">
+        <h3>Daveward forecast</h3>
+        <!-- Use an iframe to embed the HTML file content -->
+        <iframe src="forecast_plots/forecast_daveward.html" width="100%" height="720px"></iframe>
+    </div>
+
+    <!-- forecast 3 -->
+    <div id="forecast3">
+        <h3>Greenbrier Forecas</h3>
+        <!-- Use an iframe to embed the HTML file content -->
+        <iframe src="forecast_plots/forecast_greenbrier.html" width="100%" height="720px"></iframe>
+    </div>
+
+    <!-- forecast4 -->
+    <div id="forecast4">
+        <h3>Harkrider forecas</h3>
+        <!-- Use an iframe to embed the HTML file content -->
+        <iframe src="forecast_plots/forecast_harkrider.html" width="100%" height="720px"></iframe>
+    </div>
+    
+</div>
 <!-- Location: Cabot -->
 <div>
     <h2>Cabot Location</h2>
@@ -284,6 +316,13 @@
     
 </div>
 <script>
+    //Forecasts
+    document.getElementById('forecast1').innerHTML = '<iframe src="forecast_plots/forecast_cabot.html" width="100%" height="720px"></iframe>';
+    document.getElementById('forecast2').innerHTML = '<iframe src="forecast_plots/forecast_daveward.html" width="100%" height="720px"></iframe>';
+    document.getElementById('forecast3').innerHTML = '<iframe src="forecast_plots/forecast_greenbrier.html" width="100%" height="720px"></iframe>';
+    document.getElementById('forecast4').innerHTML = '<iframe src="forecast_plots/forecast_harkrider.html" width="100%" height="720px"></iframe>';
+
+    
     // Cabot plots
     document.getElementById('cabot_plot1').innerHTML = '<iframe src="Cabot/income_over_time_cabot.html" width="100%" height="720px"></iframe>';
     document.getElementById('cabot_plot2').innerHTML = '<iframe src="Cabot/laborcost_heatmap_cabot_week41.html" width="100%" height="720px"></iframe>';
